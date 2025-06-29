@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AIOStreams</Name>
+  <Repository>viren070/aiostreams</Repository>
+  <Registry>https://hub.docker.com/r/viren070/aiostreams/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/viren070/aiostreams/</Support>
+  <Project/>
+  <Overview>Consolidate multiple Stremio addons and debrid services into one highly customisable super-addon. &#xD;
+&#xD;
+https://hub.docker.com/r/viren070/aiostreams/</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Viren070/AIOStreams/main/packages/frontend/public/assets/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1751169689</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Container Variable 1" Target="NODE_VERSION" Default="22.16.0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">22.16.0</Config>
+  <Config Name="Container Variable 2" Target="YARN_VERSION" Default="1.22.22" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1.22.22</Config>
+  <Config Name="Appdata" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aiostreams/</Config>
+  <Config Name="DATABASE_URI" Target="DATABASE_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite:///app/data/db.sqlite</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="(REQUIRED) Open the console and use the command to obtain a key:&#13;&#10;openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ADDON_PASSWORD" Target="ADDON_PASSWORD" Default="" Mode="" Description="Leave empty if you don't want a password protected addon" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="http|debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
+  <Config Name="LOG_TIMEZONE" Target="LOG_TIMEZONE" Default="asia/riyadh|America/New_York|Europe/London" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">asia/riyadh</Config>
+  <TailscaleStateDir/>
+</Container>
