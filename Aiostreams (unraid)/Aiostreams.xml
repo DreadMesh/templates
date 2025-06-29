@@ -3,7 +3,7 @@
   <Name>AIOStreams</Name>
   <Repository>viren070/aiostreams</Repository>
   <Registry>https://github.com/Viren070/AIOStreams</Registry>
-  <Network>dreadmesh</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
