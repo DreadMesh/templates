@@ -26,10 +26,10 @@ https://discord.gg/aiostreams</Overview>
   <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Appdata" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aiostreams/</Config>
   <Config Name="DATABASE_URI" Target="DATABASE_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite:///app/data/db.sqlite</Config>
-  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="(REQUIRED) Open the console and use the command to obtain a key:&#13;&#10;openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="ADDON_PASSWORD" Target="ADDON_PASSWORD" Default="" Mode="" Description="Leave empty if you don't want a password protected addon" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="CRITICAL: Secret key for encrypting addon configuration. Generate one using:&#13;&#10;openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ADDON_PASSWORD" Target="ADDON_PASSWORD" Default="" Mode="" Description="API key to protect your addon installation and usage. Leave empty to disable password protection." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="http|debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">debug</Config>
   <Config Name="LOG_TIMEZONE" Target="LOG_TIMEZONE" Default="asia/riyadh|America/New_York|Europe/London" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">asia/riyadh</Config>
-  <Config Name="REGEX_FILTER_ACCESS" Target="REGEX_FILTER_ACCESS" Default="all|trusted|none" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="REGEX_FILTER_ACCESS" Target="REGEX_FILTER_ACCESS" Default="all|trusted|none" Mode="" Description="Controls who can use regex filters." Type="Variable" Display="always" Required="false" Mask="false">all</Config>
   <TailscaleStateDir/>
 </Container>
