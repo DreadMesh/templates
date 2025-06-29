@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>AIOStreams</Name>
   <Repository>viren070/aiostreams</Repository>
-  <Registry>https://hub.docker.com/r/viren070/aiostreams/</Registry>
+  <Registry>https://github.com/Viren070/AIOStreams</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
