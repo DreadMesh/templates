@@ -19,17 +19,19 @@ https://discord.gg/aiostreams</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1751178690</DateInstalled>
+  <DateInstalled>1751179570</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Appdata" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aiostreams/</Config>
   <Config Name="DATABASE_URI" Target="DATABASE_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite:///app/data/db.sqlite</Config>
-  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="CRITICAL: Secret key for encrypting addon configuration. Generate one using:&#13;&#10;openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="CRITICAL: Secret key for encrypting addon configuration. &#13;&#10;Generate one using: openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="ADDON_PASSWORD" Target="ADDON_PASSWORD" Default="" Mode="" Description="API key to protect your addon installation and usage. Leave empty to disable password protection." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="http|debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">debug</Config>
-  <Config Name="LOG_TIMEZONE" Target="LOG_TIMEZONE" Default="asia/riyadh|America/New_York|Europe/London" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">asia/riyadh</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info|http|debug" Mode="" Description="Set the verbosity of logs. Options: " Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="LOG_TIMEZONE" Target="LOG_TIMEZONE" Default="Asia/Riyadh|America/New_York|Europe/London|Etc/UTC" Mode="" Description="Adjust the timezone used for logging. e.g. Europe/Paris, America/New_York" Type="Variable" Display="always" Required="false" Mask="false">Asia/Riyadh</Config>
   <Config Name="REGEX_FILTER_ACCESS" Target="REGEX_FILTER_ACCESS" Default="all|trusted|none" Mode="" Description="Controls who can use regex filters." Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="TRUSTED_UUIDS" Target="TRUSTED_UUIDS" Default="" Mode="" Description="Comma-separated list of trusted UUIDs.&#13;&#10;Trusted users can access features like regex filters if REGEX_FILTER_ACCESS is 'trusted'.&#13;&#10;Example: TRUSTED_UUIDS=ae32f456-1234-5678-9012-345678901234,another-uuid-here" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MAX_ADDONS" Target="MAX_ADDONS" Default="" Mode="" Description="Maximum number of addons allowed per AIOStreams configuration." Type="Variable" Display="always" Required="false" Mask="false">15</Config>
   <TailscaleStateDir/>
 </Container>
