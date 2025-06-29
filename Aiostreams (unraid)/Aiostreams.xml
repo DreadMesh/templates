@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>AIOStreams</Name>
-  <Repository>viren070/aiostreams</Repository>
+  <Repository>ghcr.io/viren070/aiostreams:latest</Repository>
   <Registry>https://github.com/Viren070/AIOStreams</Registry>
   <Network>bridge</Network>
   <MyIP/>
