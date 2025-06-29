@@ -19,13 +19,11 @@ https://discord.gg/aiostreams</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1751172530</DateInstalled>
+  <DateInstalled>1751173239</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
-  <Config Name="Container Variable 1" Target="NODE_VERSION" Default="22.16.0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">22.16.0</Config>
-  <Config Name="Container Variable 2" Target="YARN_VERSION" Default="1.22.22" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1.22.22</Config>
   <Config Name="Appdata" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aiostreams/</Config>
   <Config Name="DATABASE_URI" Target="DATABASE_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite:///app/data/db.sqlite</Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="(REQUIRED) Open the console and use the command to obtain a key:&#13;&#10;openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
