@@ -3,11 +3,11 @@
   <Name>AIOStreams</Name>
   <Repository>viren070/aiostreams</Repository>
   <Registry>https://github.com/Viren070/AIOStreams</Registry>
-  <Network>bridge</Network>
+  <Network>dreadmesh</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://discord.gg/aiostreams</Support>
+  <Support/>
   <Project>https://github.com/Viren070/AIOStreams</Project>
   <Overview>AIOStreams consolidates multiple Stremio addons and debrid services into a single, easily configurable addon. It allows highly customisable filtering, sorting, and formatting of results and supports proxying all your streams through MediaFlow Proxy or StremThru for improved compatibility and IP restriction bypassing. &#xD;
 &#xD;
@@ -19,7 +19,7 @@ https://discord.gg/aiostreams</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1751173239</DateInstalled>
+  <DateInstalled>1751178690</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -28,7 +28,8 @@ https://discord.gg/aiostreams</Overview>
   <Config Name="DATABASE_URI" Target="DATABASE_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite:///app/data/db.sqlite</Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="(REQUIRED) Open the console and use the command to obtain a key:&#13;&#10;openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="ADDON_PASSWORD" Target="ADDON_PASSWORD" Default="" Mode="" Description="Leave empty if you don't want a password protected addon" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="http|debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="http|debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">debug</Config>
   <Config Name="LOG_TIMEZONE" Target="LOG_TIMEZONE" Default="asia/riyadh|America/New_York|Europe/London" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">asia/riyadh</Config>
+  <Config Name="REGEX_FILTER_ACCESS" Target="REGEX_FILTER_ACCESS" Default="all|trusted|none" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
   <TailscaleStateDir/>
 </Container>
