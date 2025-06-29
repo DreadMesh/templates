@@ -7,11 +7,11 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/Viren070/AIOStreams</Support>
-  <Project/>
+  <Support>https://discord.gg/aiostreams</Support>
+  <Project>https://github.com/Viren070/AIOStreams</Project>
   <Overview>Consolidate multiple Stremio addons and debrid services into one highly customisable super-addon. &#xD;
 &#xD;
-https://hub.docker.com/r/viren070/aiostreams/</Overview>
+https://github.com/Viren070/AIOStreams</Overview>
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
@@ -19,7 +19,7 @@ https://hub.docker.com/r/viren070/aiostreams/</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1751169689</DateInstalled>
+  <DateInstalled>1751172530</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
