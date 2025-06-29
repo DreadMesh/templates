@@ -23,7 +23,7 @@ https://discord.gg/aiostreams</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Appdata" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aiostreams/</Config>
   <Config Name="DATABASE_URI" Target="DATABASE_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite:///app/data/db.sqlite</Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="CRITICAL: Secret key for encrypting addon configuration. &#13;&#10;Generate one using: openssl rand -hex 32" Type="Variable" Display="always" Required="false" Mask="false"/>
