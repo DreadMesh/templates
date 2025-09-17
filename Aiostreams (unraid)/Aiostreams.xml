@@ -33,5 +33,6 @@ https://discord.gg/aiostreams</Overview>
   <Config Name="REGEX_FILTER_ACCESS" Target="REGEX_FILTER_ACCESS" Default="all|trusted|none" Mode="" Description="Controls who can use regex filters." Type="Variable" Display="always" Required="false" Mask="false">all</Config>
   <Config Name="TRUSTED_UUIDS" Target="TRUSTED_UUIDS" Default="" Mode="" Description="Comma-separated list of trusted UUIDs.&#13;&#10;Trusted users can access features like regex filters if REGEX_FILTER_ACCESS is 'trusted'.&#13;&#10;Example: TRUSTED_UUIDS=ae32f456-1234-5678-9012-345678901234,another-uuid-here" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MAX_ADDONS" Target="MAX_ADDONS" Default="" Mode="" Description="Maximum number of addons allowed per AIOStreams configuration." Type="Variable" Display="always" Required="false" Mask="false">15</Config>
+  <Config Name="BASE_URL" Target="BASE_URL" Default="" Mode="" Description="# The base URL of your addon. Required for proper functioning.&#13;&#10;# Used for generating installation URLs, identifying self scraping, replacing genre links, generating stream URLs for built in addons etc.&#13;&#10;# Example: https://aiostreams.yourdomain.com" Type="Variable" Display="always" Required="false" Mask="false"/>
   <TailscaleStateDir/>
 </Container>
